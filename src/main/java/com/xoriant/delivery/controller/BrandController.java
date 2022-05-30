@@ -4,11 +4,17 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 
+import javax.jms.JMSException;
+import javax.jms.Message;
+import javax.jms.ObjectMessage;
+import javax.jms.Session;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.jms.core.MessageCreator;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -32,10 +38,21 @@ public class BrandController {
 	@Autowired
 	private BrandService brandService;
 
+	@Autowired
+	JmsTemplate jmsTemplate;
+
 	@PostMapping("/save")
 	public ResponseEntity<String> addNewBrand(@RequestBody Brand brand) {
 		log.info("addNewBrand() called");
-		String response = brandService.addNewBrand(brand);
+		String response = brandService.addNewBrand(brand) + brand.getBrandName();
+		jmsTemplate.send("brandQ", new MessageCreator() {
+
+			@Override
+			public Message createMessage(Session session) throws JMSException {
+				ObjectMessage objectMessage = session.createObjectMessage(response);
+				return objectMessage;
+			}
+		});
 		return new ResponseEntity<String>(response, HttpStatus.CREATED);
 	}
 
@@ -126,7 +143,5 @@ public class BrandController {
 	public Optional<Brand> findByBrandId(@PathVariable int brandId) {
 		return brandService.findByBrandId(brandId);
 	}
-	
-	
-	
+
 }

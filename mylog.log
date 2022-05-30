@@ -4709,3 +4709,522 @@ org.supercsv.exception.SuperCsvReflectionException: unable to find getter for fi
 2022-05-30 11:39:46.157  INFO 42116 --- [RMI TCP Connection(8)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-05-30 11:39:46.160  INFO 42116 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-05-30 11:39:46.162  INFO 42116 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-30 11:58:30.607  INFO 26508 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : Starting SpringBootJpaApplication using Java 17.0.1 on Harshawardhan-PA with PID 26508 (C:\Users\patil_ha\springboot_overall\SpringBoot-Jpa\target\classes started by patil_ha in C:\Users\patil_ha\springboot_overall\SpringBoot-Jpa)
+2022-05-30 11:58:30.610  INFO 26508 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-05-30 11:58:30.711  INFO 26508 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-30 11:58:30.712  INFO 26508 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-30 11:58:31.782  INFO 26508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 11:58:31.846  INFO 26508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 2 JPA repository interfaces.
+2022-05-30 11:58:32.533  INFO 26508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-30 11:58:32.543  INFO 26508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-30 11:58:32.544  INFO 26508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-30 11:58:32.672  INFO 26508 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-30 11:58:32.673  INFO 26508 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1959 ms
+2022-05-30 11:58:32.701  INFO 26508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-30 11:58:32.926  INFO 26508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-30 11:58:32.937  INFO 26508 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:D:/h2db/ecartjpa'
+2022-05-30 11:58:33.097  INFO 26508 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 11:58:33.203  INFO 26508 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-30 11:58:33.585  INFO 26508 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-30 11:58:33.697  INFO 26508 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-05-30 11:58:34.377 DEBUG 26508 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table brands_product_lists 
+       drop constraint if exists UK_ltnx9m0dbbx8nka5ookqvtrdf
+2022-05-30 11:58:34.380 DEBUG 26508 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table brands_product_lists 
+       add constraint UK_ltnx9m0dbbx8nka5ookqvtrdf unique (product_lists_product_id)
+2022-05-30 11:58:34.381 DEBUG 26508 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table categories_brand_lists 
+       drop constraint if exists UK_oo0eky2igrkmjksethuvpvopy
+2022-05-30 11:58:34.382 DEBUG 26508 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table categories_brand_lists 
+       add constraint UK_oo0eky2igrkmjksethuvpvopy unique (brand_lists_brand_id)
+2022-05-30 11:58:34.390  INFO 26508 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 11:58:34.397  INFO 26508 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 11:58:34.816  WARN 26508 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-30 11:58:35.958  INFO 26508 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-30 11:58:35.997  INFO 26508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-30 11:58:36.007  INFO 26508 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : Started SpringBootJpaApplication in 6.404 seconds (JVM running for 7.285)
+2022-05-30 12:01:39.402  INFO 26508 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 12:01:39.408  INFO 26508 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-30 12:01:39.518  INFO 26508 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-30 12:01:39.636  INFO 26508 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : Starting SpringBootJpaApplication using Java 17.0.1 on Harshawardhan-PA with PID 26508 (C:\Users\patil_ha\springboot_overall\SpringBoot-Jpa\target\classes started by patil_ha in C:\Users\patil_ha\springboot_overall\SpringBoot-Jpa)
+2022-05-30 12:01:39.636  INFO 26508 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-05-30 12:01:39.895  INFO 26508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 12:01:39.914  INFO 26508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 2 JPA repository interfaces.
+2022-05-30 12:01:40.011  INFO 26508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-30 12:01:40.012  INFO 26508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-30 12:01:40.012  INFO 26508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-30 12:01:40.046  INFO 26508 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-30 12:01:40.046  INFO 26508 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 407 ms
+2022-05-30 12:01:40.057  INFO 26508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-05-30 12:01:40.073  INFO 26508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-05-30 12:01:40.073  INFO 26508 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:D:/h2db/ecartjpa'
+2022-05-30 12:01:40.098  INFO 26508 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 12:01:40.106  INFO 26508 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-05-30 12:01:40.169 DEBUG 26508 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table brands_product_lists 
+       drop constraint if exists UK_ltnx9m0dbbx8nka5ookqvtrdf
+2022-05-30 12:01:40.171 DEBUG 26508 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table brands_product_lists 
+       add constraint UK_ltnx9m0dbbx8nka5ookqvtrdf unique (product_lists_product_id)
+2022-05-30 12:01:40.172 DEBUG 26508 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table categories_brand_lists 
+       drop constraint if exists UK_oo0eky2igrkmjksethuvpvopy
+2022-05-30 12:01:40.173 DEBUG 26508 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table categories_brand_lists 
+       add constraint UK_oo0eky2igrkmjksethuvpvopy unique (brand_lists_brand_id)
+2022-05-30 12:01:40.178  INFO 26508 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 12:01:40.178  INFO 26508 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 12:01:40.189  WARN 26508 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'brandController' defined in file [C:\Users\patil_ha\springboot_overall\SpringBoot-Jpa\target\classes\com\xoriant\delivery\controller\BrandController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.xoriant.delivery.controller.BrandController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The type javax.jms.Destination cannot be resolved. It is indirectly referenced from required .class files
+	Cannot instantiate the type MessageCreator
+	Syntax error, insert ";" to complete Statement
+
+2022-05-30 12:01:40.189  INFO 26508 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 12:01:40.189  INFO 26508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-05-30 12:18:48.769  INFO 23396 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : Starting SpringBootJpaApplication using Java 17.0.1 on Harshawardhan-PA with PID 23396 (C:\Users\patil_ha\springboot_overall\SpringBoot-Jpa\target\classes started by patil_ha in C:\Users\patil_ha\springboot_overall\SpringBoot-Jpa)
+2022-05-30 12:18:48.770  INFO 23396 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-05-30 12:18:48.813  INFO 23396 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-30 12:18:48.814  INFO 23396 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-30 12:18:49.472  INFO 23396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 12:18:49.536  INFO 23396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 2 JPA repository interfaces.
+2022-05-30 12:18:50.123  INFO 23396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-30 12:18:50.131  INFO 23396 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-30 12:18:50.132  INFO 23396 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-30 12:18:50.249  INFO 23396 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-30 12:18:50.249  INFO 23396 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1435 ms
+2022-05-30 12:18:50.273  INFO 23396 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-30 12:18:50.539  INFO 23396 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-30 12:18:50.550  INFO 23396 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:D:/h2db/ecartjpa'
+2022-05-30 12:18:50.684  INFO 23396 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 12:18:50.725  INFO 23396 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-30 12:18:50.876  INFO 23396 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-30 12:18:50.977  INFO 23396 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-05-30 12:18:51.536 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table brands_product_lists 
+       drop constraint if exists UK_ltnx9m0dbbx8nka5ookqvtrdf
+2022-05-30 12:18:51.539 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table brands_product_lists 
+       add constraint UK_ltnx9m0dbbx8nka5ookqvtrdf unique (product_lists_product_id)
+2022-05-30 12:18:51.539 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table categories_brand_lists 
+       drop constraint if exists UK_oo0eky2igrkmjksethuvpvopy
+2022-05-30 12:18:51.540 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table categories_brand_lists 
+       add constraint UK_oo0eky2igrkmjksethuvpvopy unique (brand_lists_brand_id)
+2022-05-30 12:18:51.546  INFO 23396 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 12:18:51.553  INFO 23396 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 12:18:52.001  WARN 23396 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-30 12:18:52.931  INFO 23396 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-30 12:18:52.973  INFO 23396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-30 12:18:52.985  INFO 23396 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : Started SpringBootJpaApplication in 4.55 seconds (JVM running for 5.313)
+2022-05-30 12:20:26.105  INFO 23396 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-30 12:20:26.106  INFO 23396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-30 12:20:26.109  INFO 23396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-05-30 12:23:06.494  INFO 23396 --- [http-nio-8080-exec-5] c.x.delivery.controller.BrandController  : addNewBrand() called
+2022-05-30 12:23:06.495  INFO 23396 --- [http-nio-8080-exec-5] c.x.delivery.service.BrandServiceImpl    : addNewBrand() called
+2022-05-30 12:23:06.555 DEBUG 23396 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    insert 
+    into
+        brands
+        (brand_id, brand_name, category_category_id) 
+    values
+        (default, ?, ?)
+2022-05-30 12:23:06.557 TRACE 23396 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [LG]
+2022-05-30 12:23:06.558 TRACE 23396 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [null]
+2022-05-30 12:25:52.996  INFO 23396 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 12:25:52.999  INFO 23396 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-30 12:25:53.097  INFO 23396 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-30 12:25:53.324  INFO 23396 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : Starting SpringBootJpaApplication using Java 17.0.1 on Harshawardhan-PA with PID 23396 (C:\Users\patil_ha\springboot_overall\SpringBoot-Jpa\target\classes started by patil_ha in C:\Users\patil_ha\springboot_overall\SpringBoot-Jpa)
+2022-05-30 12:25:53.325  INFO 23396 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-05-30 12:25:53.629  INFO 23396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 12:25:53.648  INFO 23396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 2 JPA repository interfaces.
+2022-05-30 12:25:53.763  INFO 23396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-30 12:25:53.763  INFO 23396 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-30 12:25:53.764  INFO 23396 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-30 12:25:53.807  INFO 23396 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-30 12:25:53.807  INFO 23396 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 475 ms
+2022-05-30 12:25:53.817  INFO 23396 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-05-30 12:25:53.831  INFO 23396 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-05-30 12:25:53.831  INFO 23396 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:D:/h2db/ecartjpa'
+2022-05-30 12:25:53.855  INFO 23396 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 12:25:53.861  INFO 23396 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-05-30 12:25:53.901 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table brands_product_lists 
+       drop constraint if exists UK_ltnx9m0dbbx8nka5ookqvtrdf
+2022-05-30 12:25:53.901 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table brands_product_lists 
+       add constraint UK_ltnx9m0dbbx8nka5ookqvtrdf unique (product_lists_product_id)
+2022-05-30 12:25:53.902 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table categories_brand_lists 
+       drop constraint if exists UK_oo0eky2igrkmjksethuvpvopy
+2022-05-30 12:25:53.903 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table categories_brand_lists 
+       add constraint UK_oo0eky2igrkmjksethuvpvopy unique (brand_lists_brand_id)
+2022-05-30 12:25:53.906  INFO 23396 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 12:25:53.906  INFO 23396 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 12:25:54.011  WARN 23396 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-30 12:25:54.607  INFO 23396 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-30 12:25:54.623  INFO 23396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-30 12:25:54.628  INFO 23396 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : Started SpringBootJpaApplication in 1.402 seconds (JVM running for 426.956)
+2022-05-30 12:25:54.631  INFO 23396 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-30 12:27:30.748  INFO 23396 --- [Thread-10] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 12:27:30.749  INFO 23396 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-05-30 12:27:30.862  INFO 23396 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-05-30 12:27:30.964  INFO 23396 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : Starting SpringBootJpaApplication using Java 17.0.1 on Harshawardhan-PA with PID 23396 (C:\Users\patil_ha\springboot_overall\SpringBoot-Jpa\target\classes started by patil_ha in C:\Users\patil_ha\springboot_overall\SpringBoot-Jpa)
+2022-05-30 12:27:30.964  INFO 23396 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-05-30 12:27:31.131  INFO 23396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 12:27:31.146  INFO 23396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2022-05-30 12:27:31.221  INFO 23396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-30 12:27:31.221  INFO 23396 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-30 12:27:31.221  INFO 23396 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-30 12:27:31.262  INFO 23396 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-30 12:27:31.262  INFO 23396 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 296 ms
+2022-05-30 12:27:31.274  INFO 23396 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-05-30 12:27:31.284  INFO 23396 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-05-30 12:27:31.284  INFO 23396 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:D:/h2db/ecartjpa'
+2022-05-30 12:27:31.307  INFO 23396 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 12:27:31.312  INFO 23396 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-05-30 12:27:31.350 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table brands_product_lists 
+       drop constraint if exists UK_ltnx9m0dbbx8nka5ookqvtrdf
+2022-05-30 12:27:31.351 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table brands_product_lists 
+       add constraint UK_ltnx9m0dbbx8nka5ookqvtrdf unique (product_lists_product_id)
+2022-05-30 12:27:31.352 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table categories_brand_lists 
+       drop constraint if exists UK_oo0eky2igrkmjksethuvpvopy
+2022-05-30 12:27:31.352 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table categories_brand_lists 
+       add constraint UK_oo0eky2igrkmjksethuvpvopy unique (brand_lists_brand_id)
+2022-05-30 12:27:31.354  INFO 23396 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 12:27:31.354  INFO 23396 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 12:27:31.447  WARN 23396 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-30 12:27:32.038  INFO 23396 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-30 12:27:32.050  INFO 23396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-30 12:27:32.055  INFO 23396 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : Started SpringBootJpaApplication in 1.123 seconds (JVM running for 524.383)
+2022-05-30 12:27:32.057  INFO 23396 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-30 12:32:02.993  INFO 23396 --- [Thread-14] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 12:32:02.995  INFO 23396 --- [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2022-05-30 12:32:03.088  INFO 23396 --- [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2022-05-30 12:32:03.237  INFO 23396 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : Starting SpringBootJpaApplication using Java 17.0.1 on Harshawardhan-PA with PID 23396 (C:\Users\patil_ha\springboot_overall\SpringBoot-Jpa\target\classes started by patil_ha in C:\Users\patil_ha\springboot_overall\SpringBoot-Jpa)
+2022-05-30 12:32:03.238  INFO 23396 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-05-30 12:32:03.482  INFO 23396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 12:32:03.503  INFO 23396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2022-05-30 12:32:03.614  INFO 23396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-30 12:32:03.614  INFO 23396 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-30 12:32:03.615  INFO 23396 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-30 12:32:03.650  INFO 23396 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-30 12:32:03.650  INFO 23396 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 409 ms
+2022-05-30 12:32:03.662  INFO 23396 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2022-05-30 12:32:03.674  INFO 23396 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2022-05-30 12:32:03.675  INFO 23396 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:D:/h2db/ecartjpa'
+2022-05-30 12:32:03.703  INFO 23396 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 12:32:03.710  INFO 23396 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-05-30 12:32:03.751 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table brands_product_lists 
+       drop constraint if exists UK_ltnx9m0dbbx8nka5ookqvtrdf
+2022-05-30 12:32:03.751 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table brands_product_lists 
+       add constraint UK_ltnx9m0dbbx8nka5ookqvtrdf unique (product_lists_product_id)
+2022-05-30 12:32:03.752 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table categories_brand_lists 
+       drop constraint if exists UK_oo0eky2igrkmjksethuvpvopy
+2022-05-30 12:32:03.752 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table categories_brand_lists 
+       add constraint UK_oo0eky2igrkmjksethuvpvopy unique (brand_lists_brand_id)
+2022-05-30 12:32:03.754  INFO 23396 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 12:32:03.754  INFO 23396 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 12:32:03.868  WARN 23396 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-30 12:32:04.495  INFO 23396 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-30 12:32:04.507  INFO 23396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-30 12:32:04.511  INFO 23396 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : Started SpringBootJpaApplication in 1.339 seconds (JVM running for 796.839)
+2022-05-30 12:32:04.513  INFO 23396 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-30 12:35:18.556  INFO 23396 --- [Thread-18] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 12:35:18.557  INFO 23396 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2022-05-30 12:35:18.694  INFO 23396 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2022-05-30 12:35:18.799  INFO 23396 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : Starting SpringBootJpaApplication using Java 17.0.1 on Harshawardhan-PA with PID 23396 (C:\Users\patil_ha\springboot_overall\SpringBoot-Jpa\target\classes started by patil_ha in C:\Users\patil_ha\springboot_overall\SpringBoot-Jpa)
+2022-05-30 12:35:18.800  INFO 23396 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-05-30 12:35:18.979  INFO 23396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 12:35:18.997  INFO 23396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
+2022-05-30 12:35:19.077  INFO 23396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-30 12:35:19.077  INFO 23396 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-30 12:35:19.078  INFO 23396 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-30 12:35:19.124  INFO 23396 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-30 12:35:19.124  INFO 23396 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 323 ms
+2022-05-30 12:35:19.134  INFO 23396 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2022-05-30 12:35:19.145  INFO 23396 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2022-05-30 12:35:19.145  INFO 23396 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:D:/h2db/ecartjpa'
+2022-05-30 12:35:19.167  INFO 23396 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 12:35:19.173  INFO 23396 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-05-30 12:35:19.207 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table brands_product_lists 
+       drop constraint if exists UK_ltnx9m0dbbx8nka5ookqvtrdf
+2022-05-30 12:35:19.208 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table brands_product_lists 
+       add constraint UK_ltnx9m0dbbx8nka5ookqvtrdf unique (product_lists_product_id)
+2022-05-30 12:35:19.209 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table categories_brand_lists 
+       drop constraint if exists UK_oo0eky2igrkmjksethuvpvopy
+2022-05-30 12:35:19.209 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table categories_brand_lists 
+       add constraint UK_oo0eky2igrkmjksethuvpvopy unique (brand_lists_brand_id)
+2022-05-30 12:35:19.211  INFO 23396 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 12:35:19.211  INFO 23396 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 12:35:19.308  WARN 23396 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-30 12:35:19.867  INFO 23396 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-30 12:35:19.879  INFO 23396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-30 12:35:19.883  INFO 23396 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : Started SpringBootJpaApplication in 1.116 seconds (JVM running for 992.211)
+2022-05-30 12:35:19.885  INFO 23396 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-30 12:40:34.102  INFO 23396 --- [Thread-22] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 12:40:34.103  INFO 23396 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2022-05-30 12:40:34.127  INFO 23396 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2022-05-30 12:40:34.214  INFO 23396 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : Starting SpringBootJpaApplication using Java 17.0.1 on Harshawardhan-PA with PID 23396 (C:\Users\patil_ha\springboot_overall\SpringBoot-Jpa\target\classes started by patil_ha in C:\Users\patil_ha\springboot_overall\SpringBoot-Jpa)
+2022-05-30 12:40:34.215  INFO 23396 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-05-30 12:40:34.401  INFO 23396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 12:40:34.418  INFO 23396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+2022-05-30 12:40:34.493  INFO 23396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-30 12:40:34.493  INFO 23396 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-30 12:40:34.493  INFO 23396 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-30 12:40:34.534  INFO 23396 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-30 12:40:34.534  INFO 23396 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 317 ms
+2022-05-30 12:40:34.544  INFO 23396 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2022-05-30 12:40:34.558  INFO 23396 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2022-05-30 12:40:34.558  INFO 23396 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:D:/h2db/ecartjpa'
+2022-05-30 12:40:34.578  INFO 23396 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 12:40:34.583  INFO 23396 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-05-30 12:40:34.616 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table brands_product_lists 
+       drop constraint if exists UK_ltnx9m0dbbx8nka5ookqvtrdf
+2022-05-30 12:40:34.617 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table brands_product_lists 
+       add constraint UK_ltnx9m0dbbx8nka5ookqvtrdf unique (product_lists_product_id)
+2022-05-30 12:40:34.618 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table categories_brand_lists 
+       drop constraint if exists UK_oo0eky2igrkmjksethuvpvopy
+2022-05-30 12:40:34.618 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table categories_brand_lists 
+       add constraint UK_oo0eky2igrkmjksethuvpvopy unique (brand_lists_brand_id)
+2022-05-30 12:40:34.619  INFO 23396 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 12:40:34.620  INFO 23396 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 12:40:34.714  WARN 23396 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-30 12:40:35.264  INFO 23396 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-30 12:40:35.276  INFO 23396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-30 12:40:35.280  INFO 23396 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : Started SpringBootJpaApplication in 1.096 seconds (JVM running for 1307.608)
+2022-05-30 12:40:35.282  INFO 23396 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-30 12:41:14.358  INFO 23396 --- [Thread-26] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 12:41:14.359  INFO 23396 --- [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2022-05-30 12:41:14.442  INFO 23396 --- [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2022-05-30 12:41:14.514  INFO 23396 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : Starting SpringBootJpaApplication using Java 17.0.1 on Harshawardhan-PA with PID 23396 (C:\Users\patil_ha\springboot_overall\SpringBoot-Jpa\target\classes started by patil_ha in C:\Users\patil_ha\springboot_overall\SpringBoot-Jpa)
+2022-05-30 12:41:14.515  INFO 23396 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-05-30 12:41:14.685  INFO 23396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 12:41:14.701  INFO 23396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2022-05-30 12:41:14.776  INFO 23396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-30 12:41:14.777  INFO 23396 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-30 12:41:14.777  INFO 23396 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-30 12:41:14.811  INFO 23396 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-30 12:41:14.811  INFO 23396 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 293 ms
+2022-05-30 12:41:14.821  INFO 23396 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2022-05-30 12:41:14.832  INFO 23396 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2022-05-30 12:41:14.832  INFO 23396 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:D:/h2db/ecartjpa'
+2022-05-30 12:41:14.852  INFO 23396 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 12:41:14.857  INFO 23396 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-05-30 12:41:14.886 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table brands_product_lists 
+       drop constraint if exists UK_ltnx9m0dbbx8nka5ookqvtrdf
+2022-05-30 12:41:14.888 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table brands_product_lists 
+       add constraint UK_ltnx9m0dbbx8nka5ookqvtrdf unique (product_lists_product_id)
+2022-05-30 12:41:14.888 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table categories_brand_lists 
+       drop constraint if exists UK_oo0eky2igrkmjksethuvpvopy
+2022-05-30 12:41:14.888 DEBUG 23396 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table categories_brand_lists 
+       add constraint UK_oo0eky2igrkmjksethuvpvopy unique (brand_lists_brand_id)
+2022-05-30 12:41:14.889  INFO 23396 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 12:41:14.889  INFO 23396 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 12:41:14.979  WARN 23396 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-30 12:41:15.550  INFO 23396 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-30 12:41:15.561  INFO 23396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-30 12:41:15.564  INFO 23396 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : Started SpringBootJpaApplication in 1.076 seconds (JVM running for 1347.892)
+2022-05-30 12:41:15.566  INFO 23396 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-30 12:41:45.465  INFO 23396 --- [Thread-30] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 12:41:45.466  INFO 23396 --- [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2022-05-30 12:41:45.607  INFO 23396 --- [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2022-05-30 12:41:45.745  INFO 23396 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : Starting SpringBootJpaApplication using Java 17.0.1 on Harshawardhan-PA with PID 23396 (C:\Users\patil_ha\springboot_overall\SpringBoot-Jpa\target\classes started by patil_ha in C:\Users\patil_ha\springboot_overall\SpringBoot-Jpa)
+2022-05-30 12:41:45.745  INFO 23396 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-05-30 12:42:45.117  INFO 31416 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : Starting SpringBootJpaApplication using Java 17.0.1 on Harshawardhan-PA with PID 31416 (C:\Users\patil_ha\springboot_overall\SpringBoot-Jpa\target\classes started by patil_ha in C:\Users\patil_ha\springboot_overall\SpringBoot-Jpa)
+2022-05-30 12:42:45.123  INFO 31416 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-05-30 12:42:45.548  INFO 31416 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-30 12:42:45.550  INFO 31416 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-30 12:42:46.680  INFO 31416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 12:42:46.763  INFO 31416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 2 JPA repository interfaces.
+2022-05-30 12:42:47.370  INFO 31416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-30 12:42:47.380  INFO 31416 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-30 12:42:47.380  INFO 31416 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-30 12:42:47.492  INFO 31416 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-30 12:42:47.492  INFO 31416 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1939 ms
+2022-05-30 12:42:47.514  INFO 31416 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-30 12:42:47.756  INFO 31416 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-30 12:42:47.767  INFO 31416 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:D:/h2db/ecartjpa'
+2022-05-30 12:42:47.983  INFO 31416 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 12:42:48.026  INFO 31416 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-30 12:42:48.194  INFO 31416 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-30 12:42:48.294  INFO 31416 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-05-30 12:42:48.874 DEBUG 31416 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table brands_product_lists 
+       drop constraint if exists UK_ltnx9m0dbbx8nka5ookqvtrdf
+2022-05-30 12:42:48.876 DEBUG 31416 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table brands_product_lists 
+       add constraint UK_ltnx9m0dbbx8nka5ookqvtrdf unique (product_lists_product_id)
+2022-05-30 12:42:48.877 DEBUG 31416 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table categories_brand_lists 
+       drop constraint if exists UK_oo0eky2igrkmjksethuvpvopy
+2022-05-30 12:42:48.877 DEBUG 31416 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table categories_brand_lists 
+       add constraint UK_oo0eky2igrkmjksethuvpvopy unique (brand_lists_brand_id)
+2022-05-30 12:42:48.883  INFO 31416 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 12:42:48.891  INFO 31416 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 12:42:49.337  WARN 31416 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-30 12:42:50.266  INFO 31416 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-30 12:42:50.358  INFO 31416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-30 12:42:50.598  INFO 31416 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : Started SpringBootJpaApplication in 5.995 seconds (JVM running for 6.753)
+2022-05-30 12:43:32.026  INFO 31416 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 12:43:32.029  INFO 31416 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-30 12:43:32.126  INFO 31416 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-30 12:43:32.230  INFO 31416 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : Starting SpringBootJpaApplication using Java 17.0.1 on Harshawardhan-PA with PID 31416 (C:\Users\patil_ha\springboot_overall\SpringBoot-Jpa\target\classes started by patil_ha in C:\Users\patil_ha\springboot_overall\SpringBoot-Jpa)
+2022-05-30 12:43:32.230  INFO 31416 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-05-30 12:43:32.417  INFO 31416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 12:43:32.434  INFO 31416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
+2022-05-30 12:43:32.528  INFO 31416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-30 12:43:32.529  INFO 31416 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-30 12:43:32.529  INFO 31416 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-30 12:43:32.560  INFO 31416 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-30 12:43:32.560  INFO 31416 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 328 ms
+2022-05-30 12:43:32.570  INFO 31416 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-05-30 12:43:32.582  INFO 31416 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-05-30 12:43:32.583  INFO 31416 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:D:/h2db/ecartjpa'
+2022-05-30 12:43:32.606  INFO 31416 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 12:43:32.610  INFO 31416 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-05-30 12:43:32.651 DEBUG 31416 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table brands_product_lists 
+       drop constraint if exists UK_ltnx9m0dbbx8nka5ookqvtrdf
+2022-05-30 12:43:32.652 DEBUG 31416 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table brands_product_lists 
+       add constraint UK_ltnx9m0dbbx8nka5ookqvtrdf unique (product_lists_product_id)
+2022-05-30 12:43:32.653 DEBUG 31416 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table categories_brand_lists 
+       drop constraint if exists UK_oo0eky2igrkmjksethuvpvopy
+2022-05-30 12:43:32.654 DEBUG 31416 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table categories_brand_lists 
+       add constraint UK_oo0eky2igrkmjksethuvpvopy unique (brand_lists_brand_id)
+2022-05-30 12:43:32.657  INFO 31416 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 12:43:32.657  INFO 31416 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 12:43:32.761  WARN 31416 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-30 12:43:33.333  INFO 31416 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-30 12:43:33.346  INFO 31416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-30 12:43:33.357  INFO 31416 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : Started SpringBootJpaApplication in 1.161 seconds (JVM running for 49.512)
+2022-05-30 12:43:33.361  INFO 31416 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-30 12:43:41.228  INFO 31416 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-30 12:43:41.229  INFO 31416 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-30 12:43:41.231  INFO 31416 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-05-30 12:43:41.432  INFO 31416 --- [http-nio-8080-exec-1] c.x.delivery.controller.BrandController  : addNewBrand() called
+2022-05-30 12:43:41.433  INFO 31416 --- [http-nio-8080-exec-1] c.x.delivery.service.BrandServiceImpl    : addNewBrand() called
+2022-05-30 12:43:41.527 DEBUG 31416 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    insert 
+    into
+        brands
+        (brand_id, brand_name, category_category_id) 
+    values
+        (default, ?, ?)
+2022-05-30 12:43:41.532 TRACE 31416 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Sony]
+2022-05-30 12:43:41.534 TRACE 31416 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [null]
+2022-05-30 12:43:59.866  INFO 31416 --- [Thread-10] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 12:43:59.867  INFO 31416 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-05-30 12:43:59.899  INFO 31416 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-05-30 12:43:59.987  INFO 31416 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : Starting SpringBootJpaApplication using Java 17.0.1 on Harshawardhan-PA with PID 31416 (C:\Users\patil_ha\springboot_overall\SpringBoot-Jpa\target\classes started by patil_ha in C:\Users\patil_ha\springboot_overall\SpringBoot-Jpa)
+2022-05-30 12:43:59.988  INFO 31416 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-05-30 12:44:00.186  INFO 31416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 12:44:00.204  INFO 31416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
+2022-05-30 12:44:00.282  INFO 31416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-30 12:44:00.283  INFO 31416 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-30 12:44:00.283  INFO 31416 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-30 12:44:00.314  INFO 31416 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-30 12:44:00.315  INFO 31416 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 325 ms
+2022-05-30 12:44:00.324  INFO 31416 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-05-30 12:44:00.335  INFO 31416 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-05-30 12:44:00.335  INFO 31416 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:D:/h2db/ecartjpa'
+2022-05-30 12:44:00.359  INFO 31416 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 12:44:00.364  INFO 31416 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-05-30 12:44:00.400 DEBUG 31416 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table brands_product_lists 
+       drop constraint if exists UK_ltnx9m0dbbx8nka5ookqvtrdf
+2022-05-30 12:44:00.401 DEBUG 31416 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table brands_product_lists 
+       add constraint UK_ltnx9m0dbbx8nka5ookqvtrdf unique (product_lists_product_id)
+2022-05-30 12:44:00.402 DEBUG 31416 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table categories_brand_lists 
+       drop constraint if exists UK_oo0eky2igrkmjksethuvpvopy
+2022-05-30 12:44:00.402 DEBUG 31416 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table categories_brand_lists 
+       add constraint UK_oo0eky2igrkmjksethuvpvopy unique (brand_lists_brand_id)
+2022-05-30 12:44:00.404  INFO 31416 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 12:44:00.404  INFO 31416 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 12:44:00.494  WARN 31416 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-30 12:44:01.058  INFO 31416 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-30 12:44:01.071  INFO 31416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-30 12:44:01.083  INFO 31416 --- [restartedMain] c.x.delivery.SpringBootJpaApplication    : Started SpringBootJpaApplication in 1.126 seconds (JVM running for 77.237)
+2022-05-30 12:44:01.085  INFO 31416 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-30 12:46:16.701  INFO 31416 --- [RMI TCP Connection(17)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-05-30 12:46:17.504  INFO 31416 --- [RMI TCP Connection(17)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 12:46:17.506  INFO 31416 --- [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2022-05-30 12:46:17.508  INFO 31416 --- [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.

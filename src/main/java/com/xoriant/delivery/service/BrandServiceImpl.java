@@ -26,7 +26,7 @@ public class BrandServiceImpl implements BrandService {
 		}
 		log.info("addNewBrand() called");
 		brandRepository.save(brand);
-		String response = "New Brand Added Succesfully !";
+		String response = "New Brand Added Succesfully :";
 		return response;
 	}
 
